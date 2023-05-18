@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+body{
+    position: relative;
+}
+section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0px 100px 10px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a.logo img{
+    width: 100px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+nav ul li a:hover{
+    color: #046940;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.information{
+    flex-basis: 50%;
+}
+.information span{
+    display: block;
+    font-size: 35px;
+    padding: 5px 0px;
+}
+.information span strong{
+    color: #046940;
+}
+.information p{
+    padding: 10px 0px 15px 0px;
+}
+.information button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #046940;
+    cursor: pointer;
+}
+.information button:hover{
+    opacity: 0.9;
+}
+.information button:active{
+    opacity: 0.8;
+}
+
+.image{
+    flex-basis: 50%;
+    height: 400px;
+    position: relative;
+}
+.image img{
+    width: 260px;
+    bottom: 50px;
+    left: 150px;
+    position: absolute;
+}
+.image img:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.frame_product{
+    width: 90%;
+    height: 100%;
+    background-color: #046940;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 100%;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.app a{
+    display: block;
+    font-size: 30px;
+    color: white;
+    padding: 0px 20px;
+}
+.app a:hover{
+    color: black;
+    transform: translateX(-10px);
+    transition: 0.3s ease-in-out;
+}
+/* ------------------------------------------------------- */
+.next_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+}
+.next_image img{
+    width: 50px;
+    display: block ;
+    cursor: pointer;
+}
+.next_image img:hover{
+    transform: translateY(-15px);
+    transition: 0.4s ease-out;
+}
